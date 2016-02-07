@@ -5,7 +5,16 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge" content="chrome=1">
     	<meta name="renderer" content="webkit">
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta property="og:site_name" content="Viosey" />
+		<meta property="og:url" content="http://viosey.com/" />
+		<meta property="og:type" content="blog"/>
+		<meta name="description" content="viosey，一生想做自由极客。很高兴遇见你！">
+		<meta name="keywords" content="viosey lake 白森 柏森 个人网站 博客 技术宅 宅">
         <meta name="theme-color" content="#0097A7">
+		<meta name="application-name" content="viosey"/> <!-- Windows 8/Windows Phone-->
+		<link rel="icon" type="image/png" href="favicon.ico">
+		<link rel="icon" sizes="192x192" href="favicon-highres.png">
+		<link rel="apple-touch-icon" href="touch-icon-ios.png">
         <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
@@ -23,7 +32,7 @@
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/ripples.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/roboto.min.css'); ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('css/customs.css'); ?>">
-        
+
         <!-- Google Analytics -->
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,12 +45,12 @@
 
         </script>
         <script>
-            
+
         </script>
 	</head>
 
     <body>
-        
+
     	<header>
     		<div class="navbar navbar-fixed-top navbar-inverse">
     			<div class="container">
@@ -60,7 +69,7 @@
     				    	<a href="<?php $this->options->siteUrl(); ?>">
     				    	<!--
     				    	<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
-    				    	--> 
+    				    	-->
     				    	<?php $this->options->title() ?>
     				    	</a>
     				    	</li>
@@ -89,4 +98,3 @@
     			</div>
     		</div>
     	</header>
-    

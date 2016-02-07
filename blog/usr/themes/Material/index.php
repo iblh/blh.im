@@ -16,7 +16,7 @@ $this->need('header.php');
 		<div class="row">
 			<div class="col-md-7">
 				<div class="intro animate fadeIn">
-					<h1><?php $this->options->slogan() ?></h1>
+					<h1>一生想做自由极客</h1><!--<?php $this->options->slogan() ?>-->
 					<p class="lead"></p>
 				</div>
 			</div>
@@ -46,4 +46,3 @@ $this->need('header.php');
 
 	<?php $this->need('sidebar.php'); ?>
 	<?php $this->need('footer.php'); ?>
-
