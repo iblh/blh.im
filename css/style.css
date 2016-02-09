@@ -1,0 +1,39 @@
+.headline {
+    font-family: HelveticaT, Adele, serif;
+    color: azure;
+    position: absolute;
+    height: auto;
+    top: 36%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
+.hello{
+    font-size: 2em;
+}
+.name {
+    font-family: Adele;
+    font-size: 3em;
+}
+.meet {
+    font-size: 2em;
+    padding-left: 100px;
+}
+
+@font-face {
+    font-family: Adele;
+    src:url('https://o27z61k07.qnssl.com/fontadele-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: HelveticaT;
+    src:url('https://o27z61k07.qnssl.com/fontHelvetica-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
