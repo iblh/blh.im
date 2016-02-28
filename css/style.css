@@ -1,39 +1,241 @@
-.headline {
-    font-family: HelveticaT, Adele, serif;
-    color: azure;
-    position: absolute;
-    height: auto;
-    top: 36%;
-    left: 50%;
-    text-align: center;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    cursor: default;
-}
-.hello{
-    font-size: 2em;
-}
-.name {
-    font-family: Adele;
-    font-size: 3em;
-}
-.meet {
-    font-size: 2em;
-    padding-left: 100px;
+/* ---- reset ---- */
+body {
+    margin: 0;
+    background-color: #276040;
+    font:normal 75% RobotoThin, HelveticaT, Arial, sans-serif;
 }
 
-@font-face {
-    font-family: Adele;
-    src:url('https://o27z61k07.qnssl.com/fontadele-light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+canvas {
+    display: block;
+    vertical-align: bottom;
 }
-@font-face {
-    font-family: HelveticaT;
-    src:url('https://o27z61k07.qnssl.com/fontHelvetica-Thin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 10;
+}
+.background{
+	position: fixed;
+	z-index: -10;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	height: 120%;
+}
+
+.particles-js-canvas-el{
+    width: 100%;
+    height: 100%;
+}
+
+/*content*/
+.main{
+	position: relative;
+	color: #fff;
+}
+.hello{
+    font-size: 26px;
+}
+.name {
+    font-family: RobotoThin;
+    font-weight: 100;
+    font-size: 70px;
+}
+.meet {
+    font-size: 30px;
+    padding-left: 150px;
+}
+
+
+.dbtitle{
+    font-family: RobotoThin;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.dbsubtitlecn{
+    font-family: RobotoThin;
+    font-size: 25px;
+    padding-left: 100px;
+    margin-top: 1pc;
+    margin-bottom: 2pc;
+}
+.dbsubtitleen{
+    font-family: RobotoThin;
+    font-size: 40px;
+    padding-left: 100px;
+    margin-top: 1pc;
+    margin-bottom: 2pc;
+}
+.db{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.db .inner{
+    font-family: RobotoThin, HelveticaT, serif;
+    color: azure;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10% 10% 15% 25%;
+    cursor: default;
+}
+
+/**/
+.visit-li{
+    list-style: none;
+    width: 300px;
+    height: 150px;
+    float: left;
+}
+.visit-li a:hover{
+    color: #276040;
+    background: azure;
+    opacity: .5;
+    transition: 1s;
+}
+.visit-li a{
+    text-decoration: none;
+    color: azure;
+    transition: 1s;
+}
+.visit-li p{
+    z-index: 20;
+    position: relative;
+    width: auto;
+}
+.visit-li-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.visit-li-descript{
+    font-size: 19px;
+    text-align: center;
+    opacity: .6;
+}
+
+
+
+/*skill circle*/
+.circle {
+	opacity: .8;
+	width: 120px;
+	height: 120px;
+	position: relative;
+	display: inline-block;
+	margin: 0 30px 50px 0;
+	border-radius: 50%;
+	background: rgba(255,255,255,.3);
+	border: rgba(255,255,255,.3) 3px solid;
+	transition: all .3s ease-out;
+    z-index: 20;
+    position: relative;
+}
+
+.circle:hover{
+	opacity: 1;
+    transition: all .3s ease;
+}
+
+.circle .pie_left, .pie_right {
+	width:120px;
+	height:120px;
+	position: absolute;
+	top: 0;left: 0;
+}
+
+.circle .left, .right {
+	width:120px;
+	height:120px;
+	background:rgba(0,0,0,.5);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.circle .pie_right, .right {
+	clip:rect(0,auto,auto,60px);
+}
+
+.circle .pie_left, .left {
+	clip:rect(0,60px,auto,0);
+}
+
+
+.circle .mask {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
+	color: rgba(255,255,255,.9);
+	font-size: 15px;
+	padding-top: 35px;
+	line-height: 1.8em;
+}
+
+.circle .mask p{
+	font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.circle p.describe{
+	position: absolute;
+	bottom: -50px;
+	padding-top: 10px;
+	height: 20px;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	font-style: italic;
+	opacity: .8;
+}
+
+
+/*Know me more*/
+.link{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 0 25px 30px 0;
+	color: #fff;
+	text-align: center;
+	opacity: .6;
+	transition: all .3s ease-out;
+    z-index: 20;
+    position: relative;
+}
+
+.link:hover{
+	opacity: 1;
+    transition: all .3s ease;
+}
+
+.link i{
+	display: block;
+	width: 80px;
+	height: 60px;
+	font-size: 60px;
+}
+
+.link span{
+	height: 20px;
+	line-height: 20px;
+	width: 100%;
+	font-size: 13px;
+}
+
+@media screen and (max-device-width: 480px){
+
 }

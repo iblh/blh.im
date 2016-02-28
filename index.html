@@ -18,36 +18,15 @@
 		<link rel="icon" sizes="192x192" href="favicon-highres.png">
 		<link rel="apple-touch-icon" href="touch-icon-ios.png">
 		<link href="css/style.css" rel="stylesheet" type="text/css">
-
-		<style>
-			/* ---- reset ---- */
-			body {
-				margin: 0;
-				font:normal 75% Arial, Helvetica, sans-serif;
-			}
-
-			canvas {
-				display: block;
-				vertical-align: bottom;
-			}
-
-			/* ---- particles.js container ---- */
-			#particles-js {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				background-color: #50b69f;
-				background-image: url("https://o27z61k07.qnssl.com/imgmountains-glowriver.jpg");
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: 50% 50%;
-			}
-
-			@media screen and (max-device-width: 480px){
-			}
-		</style>
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<meta name="twitter:title" content="viosey">
+		<meta name="twitter:site" content="@viosey">
 
 		<script>window.console = window.console || function(t) {};</script>
+
+	    <script src="js/jquery-2.2.0.min.js"></script>
+		<script src="js/page.js"></script>
+	    <script src="js/SmoothScroll.js"></script>
 
 		<!-- particles.js  -->
 		<script src="js/particles.min.js"></script>
@@ -63,13 +42,30 @@
 			ga('send', 'pageview');
 			//ga('set', 'userId', {{USER_ID}}); // 使用已登录的 user_id 来设置用户 ID。
 		</script>
-
+		<style>
+			@font-face {
+				font-family: HelveticaT;
+				src:url('https://o27z61k07.qnssl.com/fontHelvetica-Thin.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: RobotoThin;
+				src:url('https://o27z61k07.qnssl.com/fontRoboto-Thin.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+		</style>
 	</head>
 
 	<body>
+		<div>
+		    <img class="background" src="https://o27z61k07.qnssl.com/imgmountains-glowriver.jpg">
+		</div>
 
 		<!-- particles.js container -->
-		<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" ></canvas></div>
+		<div id="particles-js"><canvas class="particles-js-canvas-el"></canvas></div>
+
 
 		<script>
 
@@ -187,12 +183,211 @@
 
 		</script>
 
-		<div class="headline">
-			<p class="hello">你好 我是 <span class="name">viosey</span></p>
-			<p class="meet">很高兴遇见你</p>
 
+		<div class="main">
+			<div class="db" style="min-height: 937px;">
+				<div class="inner">
+					<p class="hello">你好 我是 <span class="name">viosey</span></p>
+					<p class="meet">很高兴遇见你</p>
+				</div>
+		    </div>
+
+			<div class="db" style="min-height: 937px;">
+				<div class="inner">
+					<p class="dbtitle">Maybe</p>
+					<p class="dbsubtitlecn">你想要访问:</p>
+					<li class="visit-li">
+						<p class="visit-li-title visit-li-github"><a href="https://github.com/viosey" target="_blank">Viosey's Github</a></p>
+						<p class="visit-li-descript" >某同性交友社区的个人房间</p>
+					</li>
+					<li class="visit-li">
+						<p class="visit-li-title"><a href="https://blog.viosey.com" target="_blank">Viosey's Blog</a></p>
+						<p class="visit-li-descript" >一只伪Geek的个人博客</p>
+					</li>
+				</div>
+			</div>
+
+			<div class="db" style="min-height: 937px;">
+		        <div class="inner">
+		            <p class="dbtitle">Skills</p>
+					<p class="dbsubtitleen">List:</p>
+		            <div class="skill">
+		                <div class="circle">
+		                    <div class="pie_left">
+		                        <div class="left"></div>
+		                    </div>
+		                    <div class="pie_right">
+		                        <div class="right"></div>
+		                    </div>
+		                    <div class="mask">
+		                        <p>Design</p>
+		                        <span>78</span>%
+		                    </div>
+		                    <p class="describe">1px的偏差也不能忍</p>
+		                </div>
+		                <div class="circle">
+		                    <div class="pie_left">
+		                        <div class="left"></div>
+		                    </div>
+		                    <div class="pie_right">
+		                        <div class="right"></div>
+		                    </div>
+		                    <div class="mask">
+		                        <p>HTML</p>
+		                        <span>87</span>%
+		                    </div>
+		                    <p class="describe">大概能用</p>
+		                </div>
+						<div class="circle">
+							<div class="pie_left">
+								<div class="left"></div>
+							</div>
+							<div class="pie_right">
+								<div class="right"></div>
+							</div>
+							<div class="mask">
+								<p>CSS &amp; LESS</p>
+								<span>48</span>%
+							</div>
+							<p class="describe">Less学习中</p>
+						</div>
+		                <div class="circle">
+		                    <div class="pie_left">
+		                        <div class="left"></div>
+		                    </div>
+		                    <div class="pie_right">
+		                        <div class="right"></div>
+		                    </div>
+		                    <div class="mask">
+		                        <p>JavaScript</p>
+		                        <span>34</span>%
+		                    </div>
+		                    <p class="describe">能不用就不用</p>
+		                </div>
+		                <div class="circle">
+		                    <div class="pie_left">
+		                        <div class="left"></div>
+		                    </div>
+		                    <div class="pie_right">
+		                        <div class="right"></div>
+		                    </div>
+		                    <div class="mask">
+		                        <p>PHP</p>
+		                        <span>9</span>%
+		                    </div>
+		                    <p class="describe">PHP才是坠吼的!</p>
+		                </div>
+		                <div class="circle">
+		                    <div class="pie_left">
+		                        <div class="left"></div>
+		                    </div>
+		                    <div class="pie_right">
+		                        <div class="right"></div>
+		                    </div>
+		                    <div class="mask">
+		                        <p>Python</p>
+		                        <span>0</span>%
+		                    </div>
+		                    <p class="describe">人生苦短, 我要填坑</p>
+		                </div>
+		                <div class="circle">
+		                    <div class="pie_left">
+		                        <div class="left"></div>
+		                    </div>
+		                    <div class="pie_right">
+		                        <div class="right"></div>
+		                    </div>
+		                    <div class="mask">
+		                        <p>Photography</p>
+		                        <span>50</span>%
+		                    </div>
+		                    <p class="describe">单反积灰中</p>
+		                </div>
+						<div class="circle">
+							<div class="pie_left">
+								<div class="left"></div>
+							</div>
+							<div class="pie_right">
+								<div class="right"></div>
+							</div>
+							<div class="mask">
+								<p>Dvorak</p>
+								<span>69</span>%
+							</div>
+							<p class="describe">QWERTY是什么</p>
+						</div>
+						<div class="circle">
+							<div class="pie_left">
+								<div class="left"></div>
+							</div>
+							<div class="pie_right">
+								<div class="right"></div>
+							</div>
+							<div class="mask">
+								<p>Vim</p>
+								<span>57</span>%
+							</div>
+							<p class="describe">真不会煮咖啡</p>
+						</div>
+		            </div>
+		        </div>
+		    </div>
+
+			<div class="db" style="min-height: 937px;">
+				<div class="inner">
+					<p class="dbtitle">Know Me</p>
+					<p class="dbsubtitleen" >More:</p>
+					<a href="mailto:viosey@outlook.com" target="_blank"><div class="link">
+						<i class="fa fa-envelope-square"></i>
+						<span>Mail</span>
+					</div></a>
+					<a href="http://www.v2ex.com/member/viosey" target="_blank"><div class="link">
+						<i class="fa fa-vimeo-square"></i>
+						<span>V2EX</span>
+					</div></a>
+					<a href="https://www.facebook.com/viosey" target="_blank"><div class="link">
+						<i class="fa fa-facebook-square"></i>
+						<span>Facebook</span>
+					</div></a>
+					<a href="https://twitter.com/viosey" target="_blank"><div class="link">
+						<i class="fa fa-twitter-square"></i>
+						<span>Twitter</span>
+					</div></a>
+					<a href="https://plus.google.com/116465253856896614917" target="_blank"><div class="link">
+						<i class="fa fa-google-plus-square"></i>
+						<span>Googel+</span>
+					</div></a>
+					<a href="https://steamcommunity.com/id/viosey/" target="_blank"><div class="link">
+						<i class="fa fa-steam-square"></i>
+						<span>Steam</span>
+					</div></a>
+					<a href="https://www.flickr.com/photos/viosey" target="_blank"><div class="link">
+						<i class="fa fa-flickr"></i>
+						<span>Flickr</span>
+					</div></a>
+					<a href="https://www.instagram.com/viosey/" target="_blank"><div class="link">
+						<i class="fa fa-instagram"></i>
+						<span>Intagram</span>
+					</div></a>
+					<a href="http://space.bilibili.com/1550279" target="_blank"><div class="link">
+						<i class="fa fa-caret-square-o-right"></i>
+						<span>Bilibili</span>
+					</div></a>
+					<a href="http://www.douban.com/people/viosey/" target="_blank"><div class="link">
+						<i class="fa fa-quote-right"></i>
+						<span>豆瓣</span>
+					</div></a>
+					<a href="http://music.163.com/#/user/home?id=36036929" target="_blank"><div class="link">
+						<i class="fa fa-music"></i>
+						<span>网易云音乐</span>
+					</div></a>
+					<a href="https://github.com/viosey" target="_blank"><div class="link">
+						<i class="fa fa-github-square"></i>
+						<span>Github</span>
+					</div></a>
+				</div>
+			</div>
 		</div>
-
 
 	</body>
 </html>
