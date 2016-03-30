@@ -1,7 +1,7 @@
 /* ---- reset ---- */
 body {
     margin: 0;
-    background-color: #276040;
+    background-color: #fff;
     font:normal 75% RobotoThin, HelveticaT, Arial, sans-serif;
 }
 
@@ -9,7 +9,12 @@ canvas {
     display: block;
     vertical-align: bottom;
 }
-
+#footer{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
 /* ---- particles.js container ---- */
 #particles-js {
     position: fixed;
