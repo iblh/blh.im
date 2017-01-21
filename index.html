@@ -1,407 +1,312 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <title>viosey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript">
+        (function() {
+            var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=qmMI0NsXi4',
+                protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+                trial = document.createElement('script');
+            trial.type = 'text/javascript';
+            trial.async = true;
+            trial.src = protocol + path;
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(trial);
+        })();
+    </script> -->
 
-		<title>Viosey</title>
-		<!-- copyright © 2016 viosey -->
-		<meta name="description" content="viosey，一生想做自由极客。很高兴遇见你！">
-		<meta name="keywords" content="viosey lake 白森 柏森 个人网站 博客 技术宅 宅">
-		<meta name="theme-color" content="#0097A7">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-		<meta property="og:site_name" content="Viosey" />
-		<meta property="og:url" content="http://viosey.com/" />
-		<meta property="og:type" content="blog"/>
-		<meta name="application-name" content="viosey"/> <!-- Windows 8/Windows Phone-->
-		<link rel="icon" type="image/ico" href="favicon.ico">
-		<link rel="icon" sizes="192x192" href="favicon-highres.png">
-		<link rel="apple-touch-icon" href="touch-icon-ios.png">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<meta name="twitter:title" content="viosey">
-		<meta name="twitter:site" content="@viosey">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet prefetch" href="css/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-		<script>window.console = window.console || function(t) {};</script>
+        ga('create', 'UA-83419544-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-		<script src="js/jquery-2.2.0.min.js"></script>
-		<script src="js/page.js"></script>
-		<script src="js/SmoothScroll.js"></script>
-		<!-- particles.js  -->
-		<script src="js/particles.min.js"></script>
+</head>
 
-		<!-- Google Analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-								(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-							m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<body>
 
-			ga('create', 'UA-70793365-1', 'auto');
-			ga('send', 'pageview');
-			//ga('set', 'userId', {{USER_ID}}); // 使用已登录的 user_id 来设置用户 ID。
-		</script>
+    <div class="page-header">
 
-		<style>
-			@font-face {
-				font-family: HelveticaT;
-				src:url('https://o27z61k07.qnssl.com/fontHelvetica-Thin.ttf') format('truetype');
-				font-weight: normal;
-				font-style: normal;
-			}
-			@font-face {
-				font-family: RobotoThin;
-				src:url('https://o27z61k07.qnssl.com/fontRoboto-Thin.ttf') format('truetype');
-				font-weight: normal;
-				font-style: normal;
-			}
-		</style>
-	</head>
+        <h1 class="site-logo">
+          <!-- <a href="">Site Logo</a> -->
+        </h1>
 
-	<body>
-		<div>
-		    <img class="background" src="https://o27z61k07.qnssl.com/imgmountains-glowriver.jpg">
-		</div>
+        <span class="site-menu-button">
+          <span class="site-menu-text">Menu</span>
+        <span class="site-menu-icon">
+            <span class="menu-icon-bar-1"></span>
+        <span class="menu-icon-bar-2"></span>
+        <span class="menu-icon-bar-3"></span>
+        <span class="menu-icon-bar-4"></span>
+        </span>
+        </span>
+        <div class="site-menu-wrap">
+            <div class="site-menu">
+                <div class="menu-column news-column">
+                    <h1 class="news-column-title">
+      					Latest Post
+      				</h1>
 
-		<!-- particles.js container -->
-		<div id="particles-js"><canvas class="particles-js-canvas-el"></canvas></div>
+                    <a class="news-item" href="" target="_blank">
+                        <div class="news-meta">
+                            <span class="news-date"></span>
+                        </div>
+                        <div class="news-excerpt">
+                            <h2 class="news-title"></h2>
+                            <p class="news-summary"></p>
+                        </div>
+
+                        <!-- <div class="news-image">
+                            <span class="news-image-1"></span>
+                        </div> -->
+                    </a>
+
+                    <a class="news-item" href="" target="_blank">
+                        <div class="news-meta">
+                            <span class="news-date"></span>
+                        </div>
+                        <div class="news-excerpt">
+                            <h2 class="news-title"></h2>
+                            <p class="news-summary"></p>
+                        </div>
+                    </a>
+
+                    <a class="news-item" href="" target="_blank">
+                        <div class="news-meta">
+                            <span class="news-date"></span>
+                        </div>
+                        <div class="news-excerpt">
+                            <h2 class="news-title"></h2>
+                            <p class="news-summary"></p>
+                        </div>
+                    </a>
+
+                    <a class="news-item" href="" target="_blank">
+                        <div class="news-meta">
+                            <span class="news-date"></span>
+                        </div>
+                        <div class="news-excerpt">
+                            <h2 class="news-title"></h2>
+                            <p class="news-summary"></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu-column nav-column">
+                    <nav class="site-nav">
+                        <ul>
+                            <li><a href="http://weibo.com/viosey" target="_blank">微博</a></li>
+                            <li><a href="https://steamcommunity.com/id/viosey/" target="_blank">Steam</a></li>
+                            <li><a href="http://space.bilibili.com/1550279" target="_blank">Bilibili</a></li>
+                            <li><a href="https://twitter.com/viosey" target="_blank">Twitter</a></li>
+                            <li><a href="http://music.163.com/#/user/home?id=36036929" target="_blank">网易云音乐</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-extras">
+                        <a href="#" class="nav-shortcut nav-shortcut-1">
+                            <span class="shortcut-title">Donate</span>
+                            <h3>Alipay</h3>
+                            <img src="img/alipay.png" alt="" class="nav-donate-img">
+                        </a>
+                        <a href="#" class="nav-shortcut nav-shortcut-2">
+                            <span class="shortcut-title">Donate</span>
+                            <h3>WeChat</h3>
+                            <div class="av-donate-img"></div>
+                            <img src="img/wechat.png" alt="" class="nav-donate-img">
+                        </a>
+                        <div class="nav-contact">
+                            <span class="nav-contact-title">Contact</span>
+                            <div class="contact-columns">
+                                <div class="contact-details">
+                                    <a href="mailto:hiviosey@gmail.com">hiviosey@gmail.com</a>
+                                    <a href="#">@viosey</a>
+                                    <!-- <a href="#">9c478c263c8e3f3db42149b958a7085c</a> -->
+                                </div>
+                                <div class="contact-address">
+                                    <h3>China</h3>
+                                    <p>Fujian, <br /> Amoy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Page content -->
+    <div class="page-content">
+        <div class="slider-wrap">
+            <div class="slider">
+
+                <div class="section slide-1" style="background-image: url();">
+                    <div class="slide-content">
+                        <h1 class="slide-title">
+      						<span>
+                    hi, I'm <span class="name">viosey</span> <span class="phonetic">/'vaɪəsɪ/</span>
+                  </span><br>
+      						<span>nice to meet you </span><br>
+      					</h1>
+
+                        <div class="slide-desc links-menu">
+                            <a class="links-item" href="https://blog.viosey.com" target="_blank"><i class="fa fa-code" aria-hidden="true"></i> Blog</a>
+                            <a class="links-item" href="https://github.com/viosey" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section slide-2" style="background-image: url();">
+                    <div class="slide-content">
+
+                        <h1 class="slide-title">
+      						<span>about me: </span><br />
+      					</h1>
+
+                        <div class="slide-desc">
+
+                            <div class="slide-text">
+                                <p>
+                                    <span>97 年生人，水瓶座</span><br />
+                                    <span>宅，内向</span><br />
+                                    <span>喜欢一切美和小众的事物</span><br />
+                                    <span>享受创造</span><br />
+                                    <span>一生想做自由 geek</span>
+                                </p>
+
+                                <!-- <div class="slide-link">View project <span class="icon-right"></span></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section slide-3">
+                    <div class="content-panels">
+
+                        <div class="panel">
+                            <div class="panel-image news-image-1"></div>
+                            <h3>GFW Whitelist</h3>
+                            <p>The GFW whitelist of AutoProxy format.</p>
+                            <a href="https://github.com/viosey/gfw_whitelist" target="_blank" class="button">Github</a>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-image news-image-1"></div>
+                            <h3>O</h3>
+                            <p>上网首页</p><br />
+                            <a href="https://o.viosey.com" target="_blank" class="button">visit</a>
+                        </div>
+                        <div class="panel">
+                            <!-- <span class="panel-title">viosey's lab</span> -->
+                            <div class="panel-image news-image-1"></div>
+                            <h3>Material Theme</h3>
+                            <p>
+                                Nature, Source<br /> 原之质，物之渊
+                            </p>
+                            <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="button">Github</a>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-image news-image-1"></div>
+                            <h3>Null</h3>
+                            <p>Creating</p><br />
+                            <a href="#" class="button">null</a>
+                        </div>
 
 
-		<script>
 
-			/* ---- particles.js config ---- */
-			particlesJS("particles-js", {
-				"particles": {
-					"number": {
-						"value": 80,
-						"density": {
-							"enable": true,
-							"value_area": 800
-						}
-					},
-					"color": {
-						"value": "#ffffff"
-					},
-					"shape": {
-						"type": "circle",
-						"stroke": {
-							"width": 0,
-							"color": "#000000"
-						},
-						"polygon": {
-							"nb_sides": 5
-						},
-						"image": {
-							"src": "img/github.svg",
-							"width": 100,
-							"height": 100
-						}
-					},
-					"opacity": {
-						"value": 0.8,
-						"random": false,
-						"anim": {
-							"enable": false,
-							"speed": 1,
-							"opacity_min": 0.1,
-							"sync": false
-						}
-					},
-					"size": {
-						"value": 3,
-						"random": true,
-						"anim": {
-							"enable": false,
-							"speed": 40,
-							"size_min": 0.1,
-							"sync": false
-						}
-					},
-					"line_linked": {
-						"enable": true,
-						"distance": 150,
-						"color": "#ffffff",
-						"opacity": 0.4,
-						"width": 1
-					},
-					"move": {
-						"enable": true,
-						"speed": 6,
-						"direction": "none",
-						"random": false,
-						"straight": false,
-						"out_mode": "out",
-						"bounce": false,
-						"attract": {
-							"enable": false,
-							"rotateX": 600,
-							"rotateY": 1200
-						}
-					}
-				},
-				"interactivity": {
-					"detect_on": "canvas",
-					"events": {
-						"onhover": {
-							"enable": true,
-							"mode": "grab"
-						},
-						"onclick": {
-							"enable": true,
-							"mode": "push"
-						},
-						"resize": true
-					},
-					"modes": {
-						"grab": {
-							"distance": 140,
-							"line_linked": {
-								"opacity": 1
-							}
-						},
-						"bubble": {
-							"distance": 400,
-							"size": 40,
-							"duration": 2,
-							"opacity": 8,
-							"speed": 3
-						},
-						"repulse": {
-							"distance": 200,
-							"duration": 0.4
-						},
-						"push": {
-							"particles_nb": 4
-						},
-						"remove": {
-							"particles_nb": 2
-						}
-					}
-				},
-				"retina_detect": true
-			});
+                        <div class="panel panel-wide">
+                            <span class="panel-title">here is</span>
+                            <div class="panel-image icon-document-largest"></div>
+                            <div class="panel-heading">
+                                <h2>my friends</h2>
+                                <!-- <h4>Lorem ipsum dolor sit amet, consectetur.</h4> -->
+                            </div>
 
-		</script>
+                            <div class="panel-content">
+                                <div class="panel-list">
+                                    <!-- <h5>Key Points</h5> -->
+                                    <ul class="friends-list">
+                                        <li><a href="https://neofelhz.space/" target="_blank">neoFelhz</a></li>
+                                        <li><a href="http://chuangzaoshi.com/" target="_blank">创造狮</a></li>
+                                        <li><a href="https://mat.letitfly.me/forum.php" target="_blank">MAT BBS</a></li>
+                                    </ul>
+                                </div>
+                                <div class="panel-download">
+                                    <!-- <div class="download-icon icon-document-inverted"></div> -->
+                                    <a href="https://blog.viosey.com/links/" target="_blank" class="panel-download-button">More</a>
+                                </div>
+                            </div>
+                        </div>
 
 
-		<div class="main">
-			<div class="db" style="min-height: 937px;">
-				<div class="inner">
-					<p class="hello">你好 我是 <span class="name">viosey</span></p>
-					<p class="meet">很高兴遇见你</p>
-				</div>
-		    </div>
+                        <!-- <div class="panel panel-wide">
+                  <div class="panel-image icon-document-largest"></div>
+                  <div class="panel-heading">
+                      <h2>Lorem ipsum dolor sit.</h2>
+                      <h4>Lorem ipsum dolor sit amet, consectetur.</h4>
+                  </div>
 
-			<div class="db" style="min-height: 937px;">
-				<div class="inner">
-					<p class="dbtitle">Maybe</p>
-					<p class="dbsubtitlecn">你想要访问:</p>
-					<li class="visit-li">
-						<p class="visit-li-title visit-li-github"><a href="https://github.com/viosey" target="_blank">Viosey's Github</a></p>
-						<p class="visit-li-descript" >某同性交友社区的个人房间</p>
-					</li>
-					<li class="visit-li">
-						<p class="visit-li-title"><a href="https://blog.viosey.com" target="_blank">Viosey's Blog</a></p>
-						<p class="visit-li-descript" >一只伪Geek的个人博客</p>
-					</li>
-					<li class="visit-li">
-						<p class="visit-li-title"><a href="http://lab.viosey.com" target="_blank">Viosey's Lab</a></p>
-						<p class="visit-li-descript" >Create with <i class="fa fa-heart"></i></p>
-					</li>
-					<li class="visit-li">
-						<p class="visit-li-title"><a href="http://vss.im" target="_blank">vss.im</a></p>
-						<p class="visit-li-descript" >viosey's studio</p>
-					</li>
-				</div>
-			</div>
+                  <div class="panel-content">
+                      <div class="panel-list">
+                          <h5>Key Points</h5>
+                          <ul>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam veritatis nostrum atque.</li>
+                              <li>Lorem ipsum dolor sit.</li>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam.</li>
+                          </ul>
+                      </div>
+                      <div class="panel-download">
+                          <div class="download-icon icon-document-inverted"></div>
+                          <a href="" class="panel-download-button">Download Paper</a>
+                      </div>
+                  </div>
+                </div> -->
+                    </div>
 
-			<div class="db" style="min-height: 937px;">
-		        <div class="inner">
-		            <p class="dbtitle">Skills</p>
-					<p class="dbsubtitleen">List:</p>
-		            <div class="skill">
-		                <div class="circle">
-		                    <div class="pie_left">
-		                        <div class="left"></div>
-		                    </div>
-		                    <div class="pie_right">
-		                        <div class="right"></div>
-		                    </div>
-		                    <div class="mask">
-		                        <p>Design</p>
-		                        <span>78</span>%
-		                    </div>
-		                    <p class="describe">1px的偏差也不能忍</p>
-		                </div>
-		                <div class="circle">
-		                    <div class="pie_left">
-		                        <div class="left"></div>
-		                    </div>
-		                    <div class="pie_right">
-		                        <div class="right"></div>
-		                    </div>
-		                    <div class="mask">
-		                        <p>HTML</p>
-		                        <span>87</span>%
-		                    </div>
-		                    <p class="describe">大概能用</p>
-		                </div>
-						<div class="circle">
-							<div class="pie_left">
-								<div class="left"></div>
-							</div>
-							<div class="pie_right">
-								<div class="right"></div>
-							</div>
-							<div class="mask">
-								<p>CSS &amp; LESS</p>
-								<span>56</span>%
-							</div>
-							<p class="describe">Less学习中</p>
-						</div>
-		                <div class="circle">
-		                    <div class="pie_left">
-		                        <div class="left"></div>
-		                    </div>
-		                    <div class="pie_right">
-		                        <div class="right"></div>
-		                    </div>
-		                    <div class="mask">
-		                        <p>JS/jQuery</p>
-		                        <span>41</span>%
-		                    </div>
-		                    <p class="describe">能不用就不用</p>
-		                </div>
-		                <div class="circle">
-		                    <div class="pie_left">
-		                        <div class="left"></div>
-		                    </div>
-		                    <div class="pie_right">
-		                        <div class="right"></div>
-		                    </div>
-		                    <div class="mask">
-		                        <p>PHP</p>
-		                        <span>9</span>%
-		                    </div>
-		                    <p class="describe">PHP才是坠吼的!</p>
-		                </div>
-		                <div class="circle">
-		                    <div class="pie_left">
-		                        <div class="left"></div>
-		                    </div>
-		                    <div class="pie_right">
-		                        <div class="right"></div>
-		                    </div>
-		                    <div class="mask">
-		                        <p>Python</p>
-		                        <span>0</span>%
-		                    </div>
-		                    <p class="describe">人生苦短, 我要填坑</p>
-		                </div>
-		                <div class="circle">
-		                    <div class="pie_left">
-		                        <div class="left"></div>
-		                    </div>
-		                    <div class="pie_right">
-		                        <div class="right"></div>
-		                    </div>
-		                    <div class="mask">
-		                        <p>Photography</p>
-		                        <span>50</span>%
-		                    </div>
-		                    <p class="describe">单反积灰中...</p>
-		                </div>
-						<div class="circle">
-							<div class="pie_left">
-								<div class="left"></div>
-							</div>
-							<div class="pie_right">
-								<div class="right"></div>
-							</div>
-							<div class="mask">
-								<p>Dvorak</p>
-								<span>72</span>%
-							</div>
-							<p class="describe">QWERTY是什么?</p>
-						</div>
-						<div class="circle">
-							<div class="pie_left">
-								<div class="left"></div>
-							</div>
-							<div class="pie_right">
-								<div class="right"></div>
-							</div>
-							<div class="mask">
-								<p>Vim</p>
-								<span>57</span>%
-							</div>
-							<p class="describe">真不会煮咖啡</p>
-						</div>
-		            </div>
-		        </div>
-		    </div>
+                    <div class="footer">
+                        <div class="nav">
+                            <a href="https://twitter.com/viosey" target="_blank">Twitter</a>
+                            <a href="http://space.bilibili.com/1550279" target="_blank">Bilibili</a>
+                            <a href="https://steamcommunity.com/id/viosey/" target="_blank">Steam</a>
+                            <a href="http://weibo.com/viosey" target="_blank">微博</a>
+                            <a href="http://music.163.com/#/user/home?id=36036929" target="_blank">网易云音乐</a>
+                        </div>
+                        <span class="copyright">&copy; 2017 viosey</span>
+                    </div>
 
-			<div class="db" style="min-height: 937px;">
-				<div class="inner">
-					<p class="dbtitle">Know Me</p>
-					<p class="dbsubtitleen" >More:</p>
-					<a href="mailto:i@viosey.com" target="_blank"><div class="link">
-						<i class="fa fa-envelope-square"></i>
-						<span>Mail</span>
-					</div></a>
-					<a href="http://www.v2ex.com/member/viosey" target="_blank"><div class="link">
-						<i class="fa fa-vimeo-square"></i>
-						<span>V2EX</span>
-					</div></a>
-					<a href="https://www.facebook.com/viosey" target="_blank"><div class="link">
-						<i class="fa fa-facebook-square"></i>
-						<span>Facebook</span>
-					</div></a>
-					<a href="https://twitter.com/viosey" target="_blank"><div class="link">
-						<i class="fa fa-twitter-square"></i>
-						<span>Twitter</span>
-					</div></a>
-					<a href="https://plus.google.com/116465253856896614917" target="_blank"><div class="link">
-						<i class="fa fa-google-plus-square"></i>
-						<span>Googel+</span>
-					</div></a>
-					<a href="https://steamcommunity.com/id/viosey/" target="_blank"><div class="link">
-						<i class="fa fa-steam-square"></i>
-						<span>Steam</span>
-					</div></a>
-					<a href="https://www.flickr.com/photos/viosey" target="_blank"><div class="link">
-						<i class="fa fa-flickr"></i>
-						<span>Flickr</span>
-					</div></a>
-					<a href="https://www.instagram.com/viosey/" target="_blank"><div class="link">
-						<i class="fa fa-instagram"></i>
-						<span>Intagram</span>
-					</div></a>
-					<a href="http://space.bilibili.com/1550279" target="_blank"><div class="link">
-						<i class="fa fa-caret-square-o-right"></i>
-						<span>Bilibili</span>
-					</div></a>
-					<a href="http://www.douban.com/people/viosey/" target="_blank"><div class="link">
-						<i class="fa fa-quote-right"></i>
-						<span>豆瓣</span>
-					</div></a>
-					<a href="http://music.163.com/#/user/home?id=36036929" target="_blank"><div class="link">
-						<i class="fa fa-music"></i>
-						<span>网易云音乐</span>
-					</div></a>
-					<a href="https://github.com/viosey" target="_blank"><div class="link">
-						<i class="fa fa-github-square"></i>
-						<span>Github</span>
-					</div></a>
-				</div>
-			</div>
-		</div>
-		<footer id="footer">
-			<div>
-				&copy; Viosey
-			</div>
-		</footer>
+                </div>
+            </div>
+        </div>
 
-	</body>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/index.min.js"></script>
+    <!-- <script src="js/jquery.page.js"></script> -->
+
+
+</body>
+
 </html>
