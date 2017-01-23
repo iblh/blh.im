@@ -105,9 +105,17 @@ function loadBlogFeed(){
       $(".news-item").eq(index).attr("href", link);
       $(".news-date").eq(index).append(published);
       $(".news-summary").eq(index).append($summary[1]);
-      if (index == 3) return false;
+      if (index == 5) return false;
   });
 }
+$(".site-menu-icon").click(function() {
 
-loadBlogFeed();
+})
+// $(document).ready(function(){
+//   console.log(1);
+// });
+window.onload = function(){
+  loadBlogFeed();
+};
+
 // console.log($title.text());
