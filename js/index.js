@@ -97,7 +97,7 @@ function loadBlogFeed(){
   $xml.find( "entry" ).each(function(index){
       var title = $(this).find('title').text();
       var link = $(this).find('link').attr('href');
-      var published = $(this).find('published').text();
+      var published = $(this).find('published').text().substr(0, 10);
       var summary = $(this).find('summary').text();
       var $summary = $.parseHTML($(this).find('summary').text());
 
@@ -114,8 +114,12 @@ $(".site-menu-icon").click(function() {
 // $(document).ready(function(){
 //   console.log(1);
 // });
+
 window.onload = function(){
   loadBlogFeed();
+  console.info(
+      "\n %c Copyrightight © viosey 2014-2017 %c \n\n",
+      "color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;",
+      "color:#ffffff;background:##455a64;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;"
+  );
 };
-
-// console.log($title.text());
