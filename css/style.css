@@ -277,7 +277,7 @@ ul a {
 }
 
 .sprite, .icon-right, .slide-icon span {
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
 }
 
@@ -398,7 +398,7 @@ ul a {
 }
 
 .icon-arrow-down {
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
     background-position: -327px -5px;
     width: 35px;
@@ -643,7 +643,7 @@ body {
 }
 
 .news-icons span {
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: bottom;
@@ -672,7 +672,7 @@ body {
 }
 
 .news-image span {
-    /*background-image: url(../img/sprite_preview.png);*/
+    /*background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");*/
     background-repeat: no-repeat;
     margin: auto;
     display: block;
@@ -824,7 +824,7 @@ body {
 .short-cut-icon {
     display: block;
     margin: auto;
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
 }
 
@@ -1106,7 +1106,7 @@ body {
 }
 
 .slide-1:after {
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
     background-position: -327px -5px;
     width: 35px;
@@ -1230,7 +1230,7 @@ body {
 .panel-image {
     display: block;
     margin: auto auto 30px;
-    /*background-image: url(../img/sprite_preview.png);*/
+    /*background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");*/
     background-repeat: no-repeat;
 }
 
@@ -1411,7 +1411,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
     background-position: -341px -45px;
     width: 7px;
@@ -1423,7 +1423,7 @@ body {
 }
 
 .download-icon {
-    background-image: url(../img/sprite_preview.png);
+    background-image: url("https://cdn.viosey.com/static/homepage/img/sprite_preview.png");
     background-repeat: no-repeat;
     margin: 30px auto;
     background-position: 0 -198px;
@@ -1539,7 +1539,7 @@ body {
     .panel .button {
         width: 80px;
     }
-    .panel-wide, .footer a, .contact-address {
+    .panel-wide, .footer a{
         display: none;
     }
     .news-excerpt {
@@ -1547,6 +1547,16 @@ body {
     }
     .news-image-1 {
         height: 30px;
+    }
+    .menu-active .nav-shortcut{
+        display: none;
+    }
+    .contact-details{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .contact-address{
+        padding-left: 30px;
     }
 }
 
