@@ -1382,6 +1382,10 @@ body {
     padding: 10px 50px;
 }
 
+.panel-list.monero-mining {
+    padding: 0 50px;
+}
+
 .panel-list a {
     color: #fff;
 }
