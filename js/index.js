@@ -141,7 +141,7 @@ $('.site-menu-icon').click(function() {});
 window.onload = function() {
 	loadBlogFeed();
 	console.info(
-		'\n %c Copyrightight © viosey 2014-2017 %c \n\n',
+		'\n %c Copyrightight © viosey 2014-2018 %c \n\n',
 		'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;',
 		'color:#ffffff;background:##455a64;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;'
 	);
