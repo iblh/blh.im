@@ -1,5 +1,0 @@
-# robots.txt generated at http://www.atool.org/robots.txt.php
-User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Sitemap: http://viosey.com/sitemap.xml
