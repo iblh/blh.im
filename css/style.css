@@ -23,6 +23,6 @@ main {
 
 @media screen and (max-width: 600px) {
   main {
-    padding: 50px 78px;
+    padding: 78px 25px;
   }
 } 
