@@ -20,3 +20,9 @@ main {
   font-size: 32px;
   margin-bottom: 25px;
 }
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 50px 78px;
+  }
+} 
