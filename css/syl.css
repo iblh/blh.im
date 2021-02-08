@@ -52,6 +52,11 @@ main {
 
 @media screen and (max-width: 600px) {
   main {
-    padding: 78px 25px;
+    padding: 30px 30px;
+  }
+
+  #you {
+    margin: 0 auto;
+    margin-bottom: 52px;
   }
 }
