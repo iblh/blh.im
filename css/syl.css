@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+main {
+  font-family: "Lora", serif;
+  margin: 30px 30px;
+  padding: 52px 78px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffeeee;
+}
+
+#love {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#together {
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#you {
+  margin-left: 152px;
+  margin-bottom: 52px;
+}
+
+#you .lyssyl {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 52px;
+  color: #965455;
+  padding: 9px 0;
+}
+
+#so {
+  color: #6583a8;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 78px 25px;
+  }
+}
