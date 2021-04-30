@@ -5,6 +5,10 @@ body {
   line-height: 1.25;
 }
 
+::selection {
+  background: #bdd2b6;
+}
+
 main {
   padding: 78px 125px;
   display: flex;
