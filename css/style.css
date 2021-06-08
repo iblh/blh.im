@@ -1,33 +1,55 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
 }
 
 ::selection {
-  background: #bdd2b6;
+    background: #bdd2b6;
 }
 
 main {
-  padding: 78px 125px;
-  display: flex;
-  flex-direction: column;
+    padding: 0 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#postrock {
+    padding: 78px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#jazz {
+    height: 100vh
+}
+
+#jazz img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+#indie {
+    font-weight: bold;
+    padding: 78px 0;
+    color: rgba(0,0,0,.4)
 }
 
 .row {
-  font-weight: bold;
-  font-size: 19px;
-  margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 15px;
 }
 
 .name {
-  font-size: 32px;
-  margin-bottom: 25px;
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 600px) {
-  main {
-    padding: 78px 25px;
-  }
+    main {
+        padding: 78px 25px;
+    }
 }

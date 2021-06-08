@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -11,21 +11,47 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-30W8LWCEE5"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-30W8LWCEE5');
+        gtag('config', 'G-30W8LWCEE5');
     </script>
 </head>
 
 <body>
     <main>
-        <div class="row name">Bolin Huang</div>
-        <div class="row location">South China / Los Angeles</div>
-        <div class="row email">ibh#live.com</div>
-        <div class="row">©&nbsp;2021</div>
+        <div id="postrock">
+            <div class="row name">Bolin Huang</div>
+            <div class="row location">South China / Los Angeles</div>
+            <div class="row email">ibh#live.com</div>
+            <div class="row">©&nbsp;2021</div>
+        </div>
+        <div id="jazz">
+            <!-- <img alt="blh.im" src="./img/mathilde-langevin.jpg" /> -->
+        </div>
+        <div id="indie">
+            <div id="time"></div>
+        </div>
     </main>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            function updateClock() {
+                var now = new Date();
+                document.getElementById('time').innerHTML = now.toLocaleTimeString('en-US', {
+                    hour12: false,
+                    hour: "numeric",
+                    minute: "numeric",
+                    second: "numeric"
+                }).replace(/:/g, ' · ');
+
+                // call this function again in 1000ms
+                setTimeout(updateClock, 100);
+            }
+            updateClock(); // initial call);
+        });
+    </script>
 </body>
 
 </html>
