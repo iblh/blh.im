@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.25;
+    font-size: 100%;
+    color: #353535
 }
 
 ::selection {
@@ -34,17 +36,17 @@ main {
 #indie {
     font-weight: bold;
     padding: 78px 0;
-    color: rgba(0,0,0,.4)
+    opacity: 0.8;
 }
 
 .row {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.2rem;
     margin-bottom: 15px;
 }
 
 .name {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 25px;
 }
 
