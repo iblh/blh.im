@@ -3,8 +3,9 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.25;
-    font-size: 100%;
-    color: #353535
+    font-size: 62.5%;
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ::selection {
@@ -12,46 +13,82 @@ body {
 }
 
 main {
-    padding: 0 125px;
+    padding: 0 2.5rem;
     display: flex;
-    flex-direction: row;
+    height: 100vh;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-#postrock {
-    padding: 78px 0;
-    display: flex;
-    flex-direction: column;
+a {
+    color: #353535;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #jazz {
-    height: 100vh
+    /* height: 100vh */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding-top: 2rem;
 }
 
-#jazz img {
-    /* width: 100%; */
-    height: 100%;
+#jazz #nbsp {
+    width: 20vw;
+}
+#jazz #about {
 }
 
-#indie {
+#jazz #about #where {
+    display: flex;
     font-weight: bold;
-    padding: 78px 0;
-    opacity: 0.8;
 }
 
-.row {
+#jazz #about #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 5rem;
+}
+#jazz #about #contact p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#where .location {
+    padding: 0 1rem;
+}
+#postrock {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    align-items: flex-end;
+}
+
+#postrock #name {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13vw;
     font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
 }
 
-.name {
-    font-size: 2rem;
-    margin-bottom: 25px;
+#postrock #copyright {
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 600px) {
-    main {
-        padding: 78px 25px;
+    #postrock #name {
+        font-size: 22vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #postrock #name {
+        font-size: 20vw;
     }
 }

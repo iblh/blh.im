@@ -27,37 +27,53 @@
             data-website-id="2862623d-ea25-4912-ac5b-1a2338bb5de4"
             src="https://umami.s1.pw/umami.js"
         ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
         <main>
-            <div id="postrock">
-                <div class="row name">Bolin Huang</div>
-                <div class="row location">Los Angeles</div>
-                <a class="row email" href="mailto:ibh@live.com">ibh#live.com</a>
-                <div>
-                    <a
-                        class=""
-                        href="https://www.linkedin.com/in/bolin-huang/"
-                        style="transform: translate3d(0%, 0%, 0px)"
-                        >LinkedIn ↗</a
-                    >
-                </div>
-                <div>
-                    <a
-                        class=""
-                        href="https://github.com/bollnh"
-                        style="transform: translate3d(0%, 0%, 0px)"
-                        >GitHub ↗</a
-                    >
-                </div>
-                <div class="row">©&nbsp;2021</div>
-            </div>
             <div id="jazz">
                 <!-- <img alt="blh.im" src="./img/mathilde-langevin.jpg" /> -->
+                <div id="nbsp"></div>
+                <div id="about">
+                    <div id="where">
+                        <div class="location">Los Angeles, CA</div>
+                        <div id="time"></div>
+                    </div>
+                    <div id="contact">
+                        <p>
+                            <span>Contact</span>
+                            <a class="row email" href="mailto:ibh@live.com"
+                                >ibh#live.com</a
+                            >
+                            <span>tel. 213-234-8689</span>
+                        </p>
+                        <p>
+                            <span>Social</span>
+                            <a
+                                class=""
+                                href="https://github.com/bollnh"
+                                style="transform: translate3d(0%, 0%, 0px)"
+                                >GitHub ↗</a
+                            >
+                            <a
+                                class=""
+                                href="https://www.linkedin.com/in/bolin-huang/"
+                                style="transform: translate3d(0%, 0%, 0px)"
+                                >LinkedIn ↗</a
+                            >
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="indie">
-                <div id="time"></div>
+            <div id="postrock">
+                <div id="name">Bolin Huang</div>
+                <div id="copyright">©&nbsp;2021</div>
             </div>
         </main>
 
@@ -67,6 +83,7 @@
                     var now = new Date();
                     document.getElementById('time').innerHTML = now
                         .toLocaleTimeString('en-US', {
+                            timeZone: 'America/Los_Angeles',
                             hour12: false,
                             hour: 'numeric',
                             minute: 'numeric',
