@@ -67,7 +67,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     align-items: flex-end;
 }
 
