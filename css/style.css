@@ -40,7 +40,10 @@ a:hover {
 #jazz #nbsp {
     width: 20vw;
 }
-#jazz #about {
+
+#jazz #bw {
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 #jazz #about #where {

@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Bolin Huang</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="icon" href="favicon.svg">
+        <link rel="icon" href="favicon.svg" />
         <link rel="stylesheet" href="./css/style.css" />
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -35,11 +35,20 @@
         />
     </head>
 
-    <body>
+    <body style="background-color: rgb(255, 255, 255)">
         <main>
             <div id="jazz">
-                <!-- <img alt="blh.im" src="./img/mathilde-langevin.jpg" /> -->
-                <div id="nbsp"></div>
+                <div id="nbsp">
+                    <svg
+                        id="bw"
+                        viewBox="0 0 16 14"
+                        width="16"
+                        height="14"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <polygon points="8,0 16,13.856 0,13.856" fill="#353535" />
+                    </svg>
+                </div>
                 <div id="about">
                     <div id="where">
                         <div class="location">Los Angeles, CA</div>
@@ -61,7 +70,6 @@
                                     class=""
                                     href="https://github.com/bollnh"
                                     target="_blank"
-                                    style="transform: translate3d(0%, 0%, 0px)"
                                 >
                                     @bollnh
                                 </a>
@@ -72,7 +80,6 @@
                                     class=""
                                     href="https://www.linkedin.com/in/bolin-huang/"
                                     target="_blank"
-                                    style="transform: translate3d(0%, 0%, 0px)"
                                     >@bolin-huang</a
                                 >
                             </span>
@@ -104,6 +111,42 @@
                     setTimeout(updateClock, 1000);
                 }
                 updateClock(); // initial call);
+
+                function bw() {
+                    var links = document.getElementsByTagName('a');
+                    if (
+                        document.body.style.backgroundColor ==
+                        'rgb(255, 255, 255)'
+                    ) {
+                        document.body.style.backgroundColor = '#111';
+                        document.body.style.color = '#F6F6F6';
+                        document.getElementsByTagName('polygon')[0].style.fill = '#F6F6F6';
+
+                        for (var i = 0; i < links.length; i++) {
+                            if (links[i].href) {
+                                links[i].style.color = '#F6F6F6';
+                            }
+                        }
+                    } else {
+                        document.body.style.backgroundColor = '#fff';
+                        document.body.style.color = '#353535';
+                        document.getElementsByTagName('polygon')[0].style.fill = '#353535';
+
+                        for (var i = 0; i < links.length; i++) {
+                            if (links[i].href) {
+                                links[i].style.color = '#353535';
+                            }
+                        }
+                    }
+                }
+
+                document.getElementById('bw').addEventListener(
+                    'click',
+                    function (event) {
+                        bw();
+                    },
+                    false
+                );
             });
         </script>
     </body>
