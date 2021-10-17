@@ -39,15 +39,21 @@
         <main>
             <div id="jazz">
                 <div id="nbsp">
-                    <svg
-                        id="bw"
-                        viewBox="0 0 16 14"
-                        width="16"
-                        height="14"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <polygon points="8,0 16,13.856 0,13.856" fill="#353535" />
-                    </svg>
+                    <div id="logo">
+                        <svg
+                            id="bw"
+                            viewBox="0 0 16 14"
+                            width="16"
+                            height="14"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <polygon
+                                points="8,0 16,13.856 0,13.856"
+                                fill="#353535"
+                            />
+                        </svg>
+                        <span id="domain">blh.im</span>
+                    </div>
                 </div>
                 <div id="about">
                     <div id="where">
@@ -57,10 +63,13 @@
                     <div id="contact">
                         <p>
                             <span>Contact</span>
-                            <a class="row email" href="mailto:ibh@live.com"
+                            <a class="email" href="mailto:ibh@live.com"
                                 >ibh#live.com</a
                             >
-                            <span>tel. 213-234-8689</span>
+                            <span
+                                >tel.
+                                <a href="tel:2132348689">213-234-8689</a></span
+                            >
                         </p>
                         <p>
                             <span>Social</span>
@@ -95,6 +104,12 @@
 
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function () {
+                // auto dark
+                var hour = new Date().getHours();
+                if (hour > 20 || hour < 8) {
+                    bw();
+                }
+
                 function updateClock() {
                     var now = new Date();
                     document.getElementById('time').innerHTML = now
@@ -120,7 +135,8 @@
                     ) {
                         document.body.style.backgroundColor = '#111';
                         document.body.style.color = '#F6F6F6';
-                        document.getElementsByTagName('polygon')[0].style.fill = '#F6F6F6';
+                        document.getElementsByTagName('polygon')[0].style.fill =
+                            '#F6F6F6';
 
                         for (var i = 0; i < links.length; i++) {
                             if (links[i].href) {
@@ -130,7 +146,8 @@
                     } else {
                         document.body.style.backgroundColor = '#fff';
                         document.body.style.color = '#353535';
-                        document.getElementsByTagName('polygon')[0].style.fill = '#353535';
+                        document.getElementsByTagName('polygon')[0].style.fill =
+                            '#353535';
 
                         for (var i = 0; i < links.length; i++) {
                             if (links[i].href) {

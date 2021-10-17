@@ -37,13 +37,16 @@ a:hover {
     padding-top: 2rem;
 }
 
-#jazz #nbsp {
-    width: 20vw;
+#jazz #logo {
+    cursor: pointer;
 }
 
-#jazz #bw {
-    padding: 0.5rem;
-    cursor: pointer;
+#jazz #logo svg {
+    padding: 0 0.2rem;
+}
+
+#jazz #domain {
+    padding: 0 0.5rem;
 }
 
 #jazz #about #where {
@@ -93,5 +96,9 @@ a:hover {
 @media screen and (max-width: 480px) {
     #postrock #name {
         font-size: 20vw;
+    }
+
+    #jazz #domain {
+        display: none;
     }
 }
