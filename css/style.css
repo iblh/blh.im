@@ -4,12 +4,22 @@ body {
     padding: 0;
     line-height: 1.25;
     font-size: 62.5%;
-    color: #353535;
+    color: var(--primary);
+    background-color: var(--background);
     font-family: 'Open Sans', sans-serif;
 }
 
 ::selection {
     background: #bdd2b6;
+}
+
+:root {
+    --background: #fff;
+    --primary: #353535;
+    --light-grey: #f6f6f6;
+    --pad: 0.7vw;
+    --fast: 500ms;
+    --ease: cubic-bezier(0.77, 0, 0.18, 1);
 }
 
 main {
@@ -21,12 +31,21 @@ main {
 }
 
 a {
-    color: #353535;
+    color: var(--primary);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 #jazz {
@@ -45,6 +64,10 @@ a:hover {
     padding: 0 0.2rem;
 }
 
+#jazz #logo svg polygon {
+    fill: var(--primary);
+}
+
 #jazz #domain {
     padding: 0 0.5rem;
 }
@@ -52,6 +75,7 @@ a:hover {
 #jazz #about #where {
     display: flex;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #jazz #about #contact {
@@ -81,6 +105,26 @@ a:hover {
     font-family: 'Oxygen', sans-serif;
     font-size: 13vw;
     font-weight: bold;
+}
+
+#postrock #resume {
+    width: 61.8vw;
+    font-size: 1.6rem;
+}
+
+#postrock #resume .section {
+    border-top: 1px solid var(--primary);
+}
+
+#postrock #resume .section .title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#postrock #resume .section p {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #postrock #copyright {

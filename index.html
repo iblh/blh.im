@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="icon" href="favicon.svg" />
         <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/js.js"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
@@ -35,27 +36,24 @@
         />
     </head>
 
-    <body style="background-color: rgb(255, 255, 255)">
+    <body>
         <main>
             <div id="jazz">
                 <div id="nbsp">
-                    <div id="logo">
+                    <div id="logo" class="noselect">
                         <svg
                             viewBox="0 0 16 14"
                             width="16"
                             height="14"
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                            <polygon
-                                points="8,0 16,13.856 0,13.856"
-                                fill="#353535"
-                            />
+                            <polygon points="8,0 16,13.856 0,13.856" />
                         </svg>
                         <span id="domain">blh.im</span>
                     </div>
                 </div>
                 <div id="about">
-                    <div id="where">
+                    <div id="where" class="noselect">
                         <div class="location">Los Angeles, CA</div>
                         <div id="time"></div>
                     </div>
@@ -100,70 +98,5 @@
                 <div id="copyright">©&nbsp;2021</div>
             </div>
         </main>
-
-        <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function () {
-                // auto dark
-                var hour = new Date().getHours();
-                if (hour > 20 || hour < 8) {
-                    bw();
-                }
-
-                function updateClock() {
-                    var now = new Date();
-                    document.getElementById('time').innerHTML = now
-                        .toLocaleTimeString('en-US', {
-                            timeZone: 'America/Los_Angeles',
-                            hour12: false,
-                            hour: 'numeric',
-                            minute: 'numeric',
-                            // second: "numeric"
-                        })
-                        .replace(/:/g, ' : ');
-
-                    // call this function again in 1000ms
-                    setTimeout(updateClock, 1000);
-                }
-                updateClock(); // initial call);
-
-                function bw() {
-                    var links = document.getElementsByTagName('a');
-                    if (
-                        document.body.style.backgroundColor ==
-                        'rgb(255, 255, 255)'
-                    ) {
-                        document.body.style.backgroundColor = '#111';
-                        document.body.style.color = '#F6F6F6';
-                        document.getElementsByTagName('polygon')[0].style.fill =
-                            '#F6F6F6';
-
-                        for (var i = 0; i < links.length; i++) {
-                            if (links[i].href) {
-                                links[i].style.color = '#F6F6F6';
-                            }
-                        }
-                    } else {
-                        document.body.style.backgroundColor = '#fff';
-                        document.body.style.color = '#353535';
-                        document.getElementsByTagName('polygon')[0].style.fill =
-                            '#353535';
-
-                        for (var i = 0; i < links.length; i++) {
-                            if (links[i].href) {
-                                links[i].style.color = '#353535';
-                            }
-                        }
-                    }
-                }
-
-                document.getElementById('logo').addEventListener(
-                    'click',
-                    function (event) {
-                        bw();
-                    },
-                    false
-                );
-            });
-        </script>
     </body>
 </html>
