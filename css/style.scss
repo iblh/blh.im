@@ -118,59 +118,59 @@ a {
         .chapter {
             display: flex;
             justify-content: space-between;
-        }
 
-        .chapter-title {
-            font-weight: bold;
-            font-size: 2.4rem;
-            padding: 2rem 0;
-            width: 15vw;
-            border-top: 1px solid var(--primary);
-            // transform: rotate(-90deg);
-        }
-
-        .sections {
-            width: 65vw;
-        }
-
-        .section {
-            border-top: 1px solid var(--primary);
-            padding: 2rem 0;
-            cursor: pointer;
-            // margin-top: 2rem;
-
-            .title {
+            .chapter-title {
                 font-weight: bold;
-                display: flex;
-                justify-content: space-between;
+                font-size: 2.4rem;
+                padding: 2rem 0;
+                width: 15vw;
+                border-top: 1px solid var(--primary);
+            }
 
-                .where_when {
-                    width: 50%;
-                    display: flex;
-                    justify-content: space-between;
+            .sections {
+                width: 65vw;
 
-                    .where {
-                        visibility: hidden;
-                        opacity: 0.8;
-                        &.vis {
-                            visibility: visible;
+                .section {
+                    border-top: 1px solid var(--primary);
+                    padding: 2rem 0;
+                    cursor: pointer;
+                    // margin-top: 2rem;
+
+                    .title {
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .where_when {
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .where {
+                                visibility: hidden;
+                                opacity: 0.8;
+                                &.vis {
+                                    visibility: visible;
+                                }
+                            }
                         }
                     }
+
+                    .details {
+                        display: flex;
+                        justify-content: space-between;
+                        height: auto;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: all var(--fast) var(--ease);
+                    }
+
+                    #vis_detail {
+                        padding-top: 2rem;
+                        max-height: 24rem;
+                    }
                 }
-            }
-
-            .details {
-                display: flex;
-                justify-content: space-between;
-                height: auto;
-                max-height: 0;
-                overflow: hidden;
-                transition: all var(--fast) var(--ease);
-            }
-
-            #vis_detail {
-                padding-top: 2rem;
-                max-height: 24rem;
             }
         }
     }
@@ -199,12 +199,14 @@ a {
             width: calc(100vw - 5rem);
             padding: 0;
 
-            .chapter-title {
-                width: 25vw;
-            }
+            .chapter {
+                .chapter-title {
+                    width: 25vw;
+                }
 
-            .sections {
-                width: 75vw;
+                .sections {
+                    width: 75vw;
+                }
             }
         }
 
@@ -215,6 +217,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    main {
+        padding: 0 1rem;
+    }
     #postrock {
         flex-direction: column;
         align-items: flex-start;
@@ -226,7 +231,20 @@ a {
         }
 
         #resume {
-            width: calc(100vw - 5rem);
+            width: calc(100vw - 2rem);
+            margin-bottom: 10vh;
+
+            .chapter {
+                .chapter-title {
+                    writing-mode: vertical-lr;
+                    width: fit-content;
+                    padding-right: 1rem;
+                }
+
+                .sections {
+                    width: 90vw;
+                }
+            }
         }
 
         #copyright {
@@ -238,13 +256,17 @@ a {
 @media screen and (max-width: 480px) {
     #jazz {
         padding-bottom: 10vh;
+
+        #domain {
+            display: none;
+        }
+
+        #contact {
+            font-size: 1.4rem;
+        }
     }
 
     #postrock {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 0;
-
         #name {
             font-size: 20vw;
             margin-bottom: 2rem;
@@ -252,9 +274,14 @@ a {
 
         #resume {
             padding: 0;
-            width: calc(100vw - 5rem);
             margin-bottom: 2rem;
             font-size: 1.4rem;
+
+            .chapter {
+                .chapter-title {
+                    font-size: 2rem;
+                }
+            }
 
             .where_when {
                 flex-direction: row-reverse;
@@ -264,13 +291,5 @@ a {
                 }
             }
         }
-
-        #copyright {
-            margin-bottom: 2rem;
-        }
-    }
-
-    #jazz #domain {
-        display: none;
     }
 }
