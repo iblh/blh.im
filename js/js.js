@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // auto dark
     var hour = new Date().getHours();
-    if (hour > 20 || hour < 8) {
+    if (hour >= 19 || hour <= 7) {
         bw();
     }
 
@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // call this function again in 1000ms
         setTimeout(updateClock, 1000);
     }
-    updateClock(); // initial call);
+    updateClock(); // initial call;
 
     function bw() {
         if (
-            getComputedStyle(document.documentElement).getPropertyValue(
-                '--background'
-            ).trim() == '#fff'
+            getComputedStyle(document.documentElement)
+                .getPropertyValue('--background')
+                .trim() == '#fff'
         ) {
             document.documentElement.style.setProperty('--primary', '#f6f6f6');
             document.documentElement.style.setProperty('--background', '#111');
@@ -51,4 +51,30 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         false
     );
+
+    function hoverWhere() {
+        var sections = document.getElementsByClassName('section');
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].addEventListener('mouseenter', function () {
+                this.querySelector('.where').classList.add('vis');
+            });
+            sections[i].addEventListener('mouseleave', function () {
+                this.querySelector('.where').classList.remove('vis');
+            });
+        }
+    }
+    hoverWhere();
 });
+
+function toggleDetail(e) {
+    var detailItem = e.currentTarget.querySelector('.details');
+
+    if (detailItem.id == 'vis_detail') {
+        detailItem.removeAttribute('id');
+    } else {
+        if (document.getElementById('vis_detail') != null) {
+            document.getElementById('vis_detail').removeAttribute('id');
+        }
+        detailItem.setAttribute('id', 'vis_detail');
+    }
+}

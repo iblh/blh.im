@@ -49,7 +49,6 @@ a {
 }
 
 #jazz {
-    /* height: 100vh */
     display: flex;
     justify-content: space-between;
     font-size: 1.6rem;
@@ -111,40 +110,67 @@ a {
     }
 
     #resume {
-        width: 60vw;
+        // width: 70vw;
         padding: 0 3vw;
         font-size: 1.6rem;
+        margin-bottom: 20vh;
+
+        .chapter {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .chapter-title {
             font-weight: bold;
             font-size: 2.4rem;
-            margin: 2rem 0;
+            padding: 2rem 0;
+            width: 15vw;
+            border-top: 1px solid var(--primary);
+            // transform: rotate(-90deg);
+        }
+
+        .sections {
+            width: 65vw;
         }
 
         .section {
             border-top: 1px solid var(--primary);
+            padding: 2rem 0;
+            cursor: pointer;
+            // margin-top: 2rem;
 
             .title {
                 font-weight: bold;
-                margin: 2rem 0;
                 display: flex;
                 justify-content: space-between;
-            }
 
-            .where_when {
-                width: 50%;
-                display: flex;
-                justify-content: space-between;
+                .where_when {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .where {
+                        visibility: hidden;
+                        opacity: 0.8;
+                        &.vis {
+                            visibility: visible;
+                        }
+                    }
+                }
             }
 
             .details {
-                margin: 2rem 0;
                 display: flex;
                 justify-content: space-between;
                 height: auto;
-                /* max-height: 0;
-                overflow: hidden; */
-                transition: max-height var(--fast) var(--ease);
+                max-height: 0;
+                overflow: hidden;
+                transition: all var(--fast) var(--ease);
+            }
+
+            #vis_detail {
+                padding-top: 2rem;
+                max-height: 24rem;
             }
         }
     }
@@ -154,15 +180,94 @@ a {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    #jazz {
+        padding-bottom: 10vh;
+    }
+
+    #postrock {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+
+        #name {
+            font-size: 22vw;
+            margin-bottom: 2rem;
+        }
+
+        #resume {
+            width: calc(100vw - 5rem);
+            padding: 0;
+
+            .chapter-title {
+                width: 25vw;
+            }
+
+            .sections {
+                width: 75vw;
+            }
+        }
+
+        #copyright {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
-    #postrock #name {
-        font-size: 22vw;
+    #postrock {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+
+        #name {
+            font-size: 22vw;
+            margin-bottom: 2rem;
+        }
+
+        #resume {
+            width: calc(100vw - 5rem);
+        }
+
+        #copyright {
+            margin-bottom: 2rem;
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    #postrock #name {
-        font-size: 20vw;
+    #jazz {
+        padding-bottom: 10vh;
+    }
+
+    #postrock {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+
+        #name {
+            font-size: 20vw;
+            margin-bottom: 2rem;
+        }
+
+        #resume {
+            padding: 0;
+            width: calc(100vw - 5rem);
+            margin-bottom: 2rem;
+            font-size: 1.4rem;
+
+            .where_when {
+                flex-direction: row-reverse;
+
+                .where {
+                    display: none;
+                }
+            }
+        }
+
+        #copyright {
+            margin-bottom: 2rem;
+        }
     }
 
     #jazz #domain {
