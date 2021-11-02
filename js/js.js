@@ -68,13 +68,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function toggleDetail(e) {
     var detailItem = e.currentTarget.querySelector('.details');
-    detailItem.classList.toggle('vis')
-    // if (detailItem.id == 'vis_detail') {
-    //     detailItem.removeAttribute('id');
-    // } else {
-    //     if (document.getElementById('vis_detail') != null) {
-    //         document.getElementById('vis_detail').removeAttribute('id');
-    //     }
-    //     detailItem.setAttribute('id', 'vis_detail');
-    // }
+    detailItem.classList.toggle('vis');
+}
+
+function toggleSections(e) {
+    var detailItems =
+        e.currentTarget.nextElementSibling.querySelectorAll('.details');
+    // console.log(detailItems);
+    // e.currentTarget.nextElementSibling.classList.toggle('vis')
+    for (var i = 0; i < detailItems.length; i++) {
+        // console.log(detailItems[i]);
+        detailItems[i].classList.add('vis');
+    }
 }
