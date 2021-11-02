@@ -53,6 +53,7 @@ a {
     justify-content: space-between;
     font-size: 1.6rem;
     padding-top: 2rem;
+    padding-bottom: 10vh;
 
     #logo {
         cursor: pointer;
@@ -100,18 +101,19 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-bottom: 4rem;
     align-items: flex-end;
+    flex-grow: 1;
 
     #name {
         font-family: 'Oxygen', sans-serif;
         font-size: 13vw;
         font-weight: bold;
+        margin-bottom: 4rem;
     }
 
     #resume {
         // width: 70vw;
-        padding: 0 3vw;
+        // padding: 0 3vw;
         font-size: 1.6rem;
         margin-bottom: 20vh;
 
@@ -164,11 +166,11 @@ a {
                         max-height: 0;
                         overflow: hidden;
                         transition: all var(--fast) var(--ease);
-                    }
 
-                    #vis_detail {
-                        padding-top: 2rem;
-                        max-height: 24rem;
+                        &.vis {
+                            padding-top: 2rem;
+                            max-height: 24rem;
+                        }
                     }
                 }
             }
@@ -177,6 +179,7 @@ a {
 
     #copyright {
         font-size: 1.6rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -221,6 +224,7 @@ a {
         padding: 0 1rem;
     }
     #postrock {
+        justify-content: flex-end;
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 0;

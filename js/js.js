@@ -68,13 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function toggleDetail(e) {
     var detailItem = e.currentTarget.querySelector('.details');
-
-    if (detailItem.id == 'vis_detail') {
-        detailItem.removeAttribute('id');
-    } else {
-        if (document.getElementById('vis_detail') != null) {
-            document.getElementById('vis_detail').removeAttribute('id');
-        }
-        detailItem.setAttribute('id', 'vis_detail');
-    }
+    detailItem.classList.toggle('vis')
+    // if (detailItem.id == 'vis_detail') {
+    //     detailItem.removeAttribute('id');
+    // } else {
+    //     if (document.getElementById('vis_detail') != null) {
+    //         document.getElementById('vis_detail').removeAttribute('id');
+    //     }
+    //     detailItem.setAttribute('id', 'vis_detail');
+    // }
 }
