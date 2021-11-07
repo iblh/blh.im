@@ -50,24 +50,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.pt2 {
-  padding-top: 2rem;
-}
-
-.td-underline {
-  text-decoration: underline;
-}
-
-ul {
-  margin: 0;
-  -webkit-padding-start: 3rem;
-          padding-inline-start: 3rem;
-}
-
-ul li {
-  padding: 0.2rem 0;
-}
-
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -89,6 +71,24 @@ ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.pt2 {
+  padding-top: 2rem;
+}
+
+.td-underline {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  -webkit-padding-start: 3rem;
+          padding-inline-start: 3rem;
+}
+
+ul li {
+  padding: 0.2rem 0;
 }
 
 #jazz {
