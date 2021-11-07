@@ -96,10 +96,15 @@
             <div id="postrock">
                 <div id="resume">
                     <div id="education" class="chapter">
-                        <div class="chapter-title" onclick="toggleSections(event)">Education</div>
+                        <div
+                            class="chapter-title"
+                            onclick="toggleSections(event)"
+                        >
+                            Education
+                        </div>
                         <div class="sections">
-                            <div class="section" onclick="toggleDetail(event)">
-                                <div class="title">
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
                                     <span
                                         >University of Southern California</span
                                     >
@@ -108,62 +113,122 @@
                                             >Los Angeles, United States</span
                                         >
                                         <span class="when"
-                                            >Jan 2020 - Present</span
+                                            >Expected 05/2022</span
                                         >
                                     </span>
                                 </div>
                                 <div class="details">
-                                    <span
-                                        >Master of Engineering, Applied Data
-                                        Science</span
-                                    >
-                                    <span>GPA: 3.52/4</span>
+                                    <div class="flex-space-between">
+                                        <span class="td-underline"
+                                            >Master of Engineering, Applied Data
+                                            Science
+                                        </span>
+                                        <span>GPA: 3.52/4.0</span>
+                                    </div>
+                                    <div>
+                                        <div class="pt2">
+                                            <b>Core Courses:</b> Machine
+                                            Learning for Data Science, Data
+                                            Visualization, Foundations of Data
+                                            Management, Database Systems,
+                                            Foundations and Applications of Data
+                                            Mining, Applied Machine Learning for
+                                            Games
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="section" onclick="toggleDetail(event)">
-                                <div class="title">
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
                                     <span
                                         >Xiamen University Tan Kah Kee
                                         College</span
                                     >
                                     <span class="where_when">
                                         <span class="where">Xiamen, China</span>
-                                        <span class="when"
-                                            >Sep 2015 - Jul 2019</span
-                                        >
+                                        <span class="when">07/2019</span>
                                     </span>
                                 </div>
                                 <div class="details">
-                                    <span
-                                        >Bachelor of Engineering, Software
-                                        Engineering</span
-                                    >
-                                    <span>GPA: 3.4/4</span>
+                                    <div class="flex-space-between">
+                                        <span class="td-underline"
+                                            >Bachelor of Engineering, Software
+                                            Engineering</span
+                                        >
+                                        <span
+                                            >GPA: 3.4/4.0 (top 10%
+                                            students)</span
+                                        >
+                                    </div>
+                                    <div>
+                                        <div class="pt2">
+                                            <b>Awarded:</b> Full Scholarship and
+                                            First Prize in the Second “China
+                                            Youth Innovation & Entrepreneurship
+                                            Competition”, National Level.
+                                        </div>
+                                        <div class="pt2">
+                                            <b>Core Courses:</b> Data Structure,
+                                            Software Engineering, Operating
+                                            System, The Design of Cross Platform
+                                            App, The Network Acceleration
+                                            Technology of CDN, Software Quality
+                                            and Testing
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="internships" class="chapter">
-                        <div class="chapter-title">Internships</div>
+                        <div
+                            class="chapter-title"
+                            onclick="toggleSections(event)"
+                        >
+                            Internships
+                        </div>
                         <div class="sections">
-                            <div class="section" onclick="toggleDetail(event)">
-                                <div class="title">
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
                                     <span class="what">Tencent Inc</span>
                                     <span class="where_when">
                                         <span class="where"
                                             >Shenzhen, China</span
                                         >
                                         <span class="when"
-                                            >Apr 2021 - Jul 2021</span
+                                            >04/2021 - 07/2021</span
                                         >
                                     </span>
                                 </div>
                                 <div class="details">
-                                    <span>Data Analyst</span>
+                                    <span class="td-underline"
+                                        >Data Analyst</span
+                                    >
+                                    <ul class="pt2">
+                                        <li>
+                                            Wrangling 500k+ of daily CDN data of
+                                            the client's streaming media website
+                                            and developed a dashboard website to
+                                            visualize data. Improve the
+                                            efficiency of the team to view and
+                                            analyze data.
+                                        </li>
+                                        <li>
+                                            Develop multiple applications on
+                                            different platforms to simulate
+                                            network requests, use Wireshark to
+                                            capture and analyze data packets.
+                                            Combined with the analysis of Google
+                                            Media Player, Firebase and Akamai,
+                                            it helped the team optimize the CDN
+                                            and reduce the loading time of media
+                                            resources by 20%.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="section" onclick="toggleDetail(event)">
-                                <div class="title">
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
                                     <span
                                         >Xiamen Meiya Pico Information Co.
                                         Ltd</span
@@ -171,54 +236,79 @@
                                     <span class="where_when">
                                         <span class="where">Xiamen, China</span>
                                         <span class="when"
-                                            >Jul 2018 - Oct 2018</span
+                                            >07/2018 - 10/2018</span
                                         >
                                     </span>
                                 </div>
                                 <div class="details">
-                                    <span
+                                    <span class="td-underline"
                                         >Research And Development Engineer</span
                                     >
+                                    <div class="pt2">
+                                        Meiya Pico is a leading company in
+                                        China's data forensics industry
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Aggregate unstructured data of
+                                            government officials from 10+
+                                            sources. Use these data to develop
+                                            and analyze government incorruptible
+                                            archive images.
+                                        </li>
+                                        <li>
+                                            Developed the system and UI with
+                                            Java and vanilla JavaScript,
+                                            visualize the behavior style of
+                                            government officials with novel
+                                            charts.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="projects" class="chapter">
-                        <div class="chapter-title">Projects</div>
+                        <div
+                            class="chapter-title"
+                            onclick="toggleSections(event)"
+                        >
+                            Projects
+                        </div>
                         <div class="sections">
-                            <div class="section" onclick="toggleDetail(event)">
-                                <div class="title">
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
                                     <span>Steam Game Recommender</span>
                                     <span class="where_when">
                                         <span class="where"></span>
                                         <span class="when"
-                                            >Oct 2020 - Dec 2020</span
+                                            >10/2020 - 12/2020</span
                                         >
                                     </span>
                                 </div>
                                 <div class="details">
                                     <ul>
                                         <li>
-                                            Use Spark to process and analyze
-                                            Steam game big data and implement a
-                                            hybrid method (content-based
-                                            recommendation and collaborative
-                                            filtering) game recommender based on
-                                            Python.
+                                            Use Spark to process and analyze 30k
+                                            Steam games data and 70k user data
+                                            and use Python to implement a game
+                                            recommender based on a hybrid method
+                                            (content-based and collaborative
+                                            filtering).
                                         </li>
                                         <li>
                                             Use game time, popularity, game tags
-                                            and other data to make user-based
-                                            recommendations (Pearson correlation
-                                            coefficient) and use a variety of
-                                            conditions such as rating as the
-                                            weight.
+                                            to make user-based recommendations
+                                            and use a variety of conditions such
+                                            as rating as the weight. The MAE
+                                            value of the rating predicted by the
+                                            algorithm is 0.1.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="section" onclick="toggleDetail(event)">
-                                <div class="title">
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
                                     <span
                                         >Vehicle Parking Monitoring in Parking
                                         Lots Based on CNN</span
@@ -226,14 +316,58 @@
                                     <span class="where_when">
                                         <span class="where"></span>
                                         <span class="when"
-                                            >Nov 2018 - Apr 2019</span
+                                            >11/2018 - 03/2019</span
                                         >
                                     </span>
                                 </div>
                                 <div class="details">
                                     <ul>
-                                        <li></li>
-                                        <li></li>
+                                        <li>
+                                            A total of 12,417 images from 3
+                                            parking lots are preprocessed, and
+                                            Python and machine learning are used
+                                            to monitor the parking situation in
+                                            the parking lot.
+                                        </li>
+                                        <li>
+                                            6 algorithm models and 5
+                                            regularizations have been
+                                            implemented, and the optimal results
+                                            have achieved an average accuracy of
+                                            98%.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="title" onclick="toggleDetail(event)">
+                                    <span>Hexo Theme Material</span>
+                                    <span class="where_when">
+                                        <span class="where"></span>
+                                        <span class="when"
+                                            >11/2015 - 02/2017</span
+                                        >
+                                    </span>
+                                </div>
+                                <div class="details">
+                                    <ul>
+                                        <li>
+                                            <a href="https://github.com/bollnh/hexo-theme-material" class="td-underline" target="_blank">GitHub Repo ↗</a>
+                                        </li>
+                                        <li>
+                                            Designed weblog theme for Hexo using
+                                            Material Design as specification,
+                                            combined multiple front-end
+                                            optimization technologies and CDN
+                                            acceleration technique
+                                        </li>
+                                        <li>
+                                            Ranked as one of the top three
+                                            optimal themes of Hexo. Attained 4k
+                                            stars in GitHub, download of
+                                            10,000+, and monthly page view of
+                                            10,000±
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

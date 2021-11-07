@@ -67,15 +67,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function toggleDetail(e) {
-    var detailItem = e.currentTarget.querySelector('.details');
+    // var detailItem = e.currentTarget.querySelector('.details');
+    var detailItem = e.currentTarget.nextElementSibling;
     detailItem.classList.toggle('vis');
 }
 
 function toggleSections(e) {
+    // e.currentTarget.nextElementSibling.classList.toggle('vis')
     var detailItems =
         e.currentTarget.nextElementSibling.querySelectorAll('.details');
-    // console.log(detailItems);
-    // e.currentTarget.nextElementSibling.classList.toggle('vis')
     for (var i = 0; i < detailItems.length; i++) {
         // console.log(detailItems[i]);
         detailItems[i].classList.add('vis');

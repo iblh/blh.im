@@ -18,7 +18,7 @@ body {
     --primary: #353535;
     --light-grey: #f6f6f6;
     --pad: 0.7vw;
-    --fast: 500ms;
+    --fast: 600ms;
     --ease: cubic-bezier(0.77, 0, 0.18, 1);
 }
 
@@ -39,6 +39,22 @@ a {
     }
 }
 
+.pt2 {
+    padding-top: 2rem;
+}
+
+.td-underline {
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    padding-inline-start: 3rem;
+    li {
+        padding: 0.2rem 0;
+    }
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -46,6 +62,11 @@ a {
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 #jazz {
@@ -127,6 +148,8 @@ a {
                 padding: 2rem 0;
                 width: 15vw;
                 border-top: 1px solid var(--primary);
+                height: fit-content;
+                cursor: pointer;
             }
 
             .sections {
@@ -134,12 +157,12 @@ a {
 
                 .section {
                     border-top: 1px solid var(--primary);
-                    padding: 2rem 0;
-                    cursor: pointer;
                     // margin-top: 2rem;
 
                     .title {
                         font-weight: bold;
+                        padding: 2rem 0;
+                        cursor: pointer;
                         display: flex;
                         justify-content: space-between;
 
@@ -161,14 +184,14 @@ a {
 
                     .details {
                         display: flex;
-                        justify-content: space-between;
+                        flex-direction: column;
                         height: auto;
                         max-height: 0;
                         overflow: hidden;
                         transition: all var(--fast) var(--ease);
 
                         &.vis {
-                            padding-top: 2rem;
+                            padding-bottom: 2rem;
                             max-height: 24rem;
                         }
                     }
