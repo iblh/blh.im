@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow:
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: *
+Disallow: /lyssyl/
+
+Sitemap: https://blh.im/sitemap.xml
