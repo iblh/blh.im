@@ -69,7 +69,6 @@ ul {
     }
 }
 
-
 #jazz {
     display: flex;
     justify-content: space-between;
@@ -79,6 +78,10 @@ ul {
 
     #logo {
         cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+        }
 
         svg {
             padding: 0 0.2rem;

@@ -44,14 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
         false
     );
 
-    document.getElementById('logo').addEventListener(
-        'click',
-        function (event) {
-            window.location.href = 'https://blh.im';
-        },
-        false
-    );
-
     function hoverWhere() {
         var sections = document.getElementsByClassName('section');
         for (var i = 0; i < sections.length; i++) {

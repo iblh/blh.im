@@ -1,0 +1,33 @@
+{
+    "lang": "en-us",
+    "name": "Bolin Huang",
+    "short_name": "blh.im",
+    "description": "",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Résumé",
+            "short_name": "Résumé",
+            "description": "Bolin's Résumé",
+            "url": "/resume/",
+            "icons": [
+                {
+                    "src": "/favicon.svg",
+                    "type": "image/svg+xml",
+                    "sizes": "512x512"
+                }
+            ]
+        }
+    ]
+}
