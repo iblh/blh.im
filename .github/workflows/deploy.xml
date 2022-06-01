@@ -1,0 +1,28 @@
+name: Deployment
+
+concurrency: production
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, 
+      # so your workflow can access it
+      - name: checkout
+        uses: actions/checkout@master # https://github.com/actions/checkout
+      - name: deploy
+        uses: AEnterprise/rsync-deploy@v1.0 # https://github.com/AEnterprise/rsync-deploy
+        env:
+          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: -avz --delete # must have this variable
+          SERVER_PORT: ${{ secrets.SSH_PORT }}
+          FOLDER: ./ # folder to push (./ is the root of current repo)
+          SERVER_IP: ${{ secrets.SSH_HOST }}
+          USERNAME: ${{ secrets.SSH_USERNAME }}
+          SERVER_DESTINATION: /www/index/ # the directory of the remote server
