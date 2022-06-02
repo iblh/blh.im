@@ -25,19 +25,29 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: checkout
-        uses: actions/checkout@v3 # https://github.com/actions/checkout
+      # - name: checkout
+      #   uses: actions/checkout@v3 # https://github.com/actions/checkout
       
       - name: deploy
-        uses: AEnterprise/rsync-deploy@v1.0 # https://github.com/AEnterprise/rsync-deploy
-        env:
-          DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: -avz --delete # must have this variable
-          SERVER_PORT: ${{ secrets.SSH_PORT }}
-          SERVER_IP: ${{ secrets.SSH_HOST }}
-          USERNAME: ${{ secrets.SSH_USERNAME }}
-          FOLDER: ./ # folder to push (./ is the root of current repo)
-          SERVER_DESTINATION: /www/index/ # the directory of the remote server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            # git update to latest codebase on main branch
+            cd /www/index && git pull
+      # - name: deploy
+      #   uses: AEnterprise/rsync-deploy@v1.0 # https://github.com/AEnterprise/rsync-deploy
+      #   env:
+      #     DEPLOY_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     ARGS: -avz --delete # must have this variable
+      #     SERVER_PORT: ${{ secrets.SSH_PORT }}
+      #     SERVER_IP: ${{ secrets.SSH_HOST }}
+      #     USERNAME: ${{ secrets.SSH_USERNAME }}
+      #     FOLDER: ./ # folder to push (./ is the root of current repo)
+      #     SERVER_DESTINATION: /www/index/ # the directory of the remote server
 
 #       # Runs a single command using the runners shell
 #       - name: Run a one-line script
