@@ -6,7 +6,7 @@ body {
   font-size: 62.5%;
   color: var(--primary);
   background-color: var(--background);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ::-moz-selection {
@@ -28,24 +28,16 @@ body {
 
 main {
   padding: 0 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a {
   color: var(--primary);
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -65,12 +57,8 @@ a:hover {
 }
 
 .flex-space-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .pt2 {
@@ -86,76 +74,49 @@ ul {
   -webkit-padding-start: 3rem;
           padding-inline-start: 3rem;
 }
-
 ul li {
   padding: 0.2rem 0;
 }
 
 #jazz {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   font-size: 1.6rem;
   padding-top: 2rem;
   padding-bottom: 10vh;
 }
-
 #jazz #logo {
   cursor: pointer;
 }
-
 #jazz #logo:hover {
   text-decoration: none;
 }
-
 #jazz #logo svg {
   padding: 0 0.2rem;
 }
-
 #jazz #logo svg polygon {
   fill: var(--primary);
 }
-
 #jazz #domain {
   padding: 0 0.5rem;
 }
-
 #jazz #about #where {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 1.4rem;
   display: flex;
   font-weight: bold;
   cursor: pointer;
 }
-
 #jazz #about #contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   margin-top: 5rem;
+  line-height: 2;
 }
-
 #jazz #about #contact p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #where .location {
@@ -163,45 +124,26 @@ ul li {
 }
 
 #postrock {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-grow: 1;
 }
-
 #postrock #name {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 13vw;
   font-weight: bold;
   margin-bottom: 4rem;
 }
-
 #postrock #resume {
   font-size: 1.6rem;
   margin-bottom: 20vh;
 }
-
 #postrock #resume .chapter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 #postrock #resume .chapter .chapter-title {
   font-weight: bold;
   font-size: 2.4rem;
@@ -213,71 +155,46 @@ ul li {
   height: fit-content;
   cursor: pointer;
 }
-
 #postrock #resume .chapter .sections {
   width: 65vw;
 }
-
 #postrock #resume .chapter .sections .section {
   border-top: 1px solid var(--primary);
 }
-
 #postrock #resume .chapter .sections .section .title {
   font-weight: bold;
   padding: 2rem 0;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 #postrock #resume .chapter .sections .section .title .where_when {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 #postrock #resume .chapter .sections .section .title .where_when .where {
   visibility: hidden;
   opacity: 0.8;
 }
-
 #postrock #resume .chapter .sections .section .title .where_when .where.vis {
   visibility: visible;
 }
-
 #postrock #resume .chapter .sections .section .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: auto;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all var(--fast) var(--ease);
   transition: all var(--fast) var(--ease);
 }
-
 #postrock #resume .chapter .sections .section .details.vis {
   padding-bottom: 2rem;
   max-height: 24rem;
 }
-
 #postrock #copyright {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 4rem;
 }
 
@@ -285,14 +202,10 @@ ul li {
   #jazz {
     padding-bottom: 10vh;
   }
+
   #postrock {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 0;
   }
   #postrock #name {
@@ -313,22 +226,15 @@ ul li {
     margin-bottom: 2rem;
   }
 }
-
 @media screen and (max-width: 600px) {
   main {
     padding: 0 1rem;
   }
+
   #postrock {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 0;
   }
   #postrock #name {
@@ -340,9 +246,8 @@ ul li {
     margin-bottom: 10vh;
   }
   #postrock #resume .chapter .chapter-title {
-    -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-            writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+        writing-mode: vertical-lr;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -355,7 +260,6 @@ ul li {
     margin-bottom: 2rem;
   }
 }
-
 @media screen and (max-width: 480px) {
   #jazz {
     padding-bottom: 10vh;
@@ -366,6 +270,7 @@ ul li {
   #jazz #contact {
     font-size: 1.4rem;
   }
+
   #postrock #name {
     font-size: 20vw;
     margin-bottom: 2rem;
@@ -379,13 +284,9 @@ ul li {
     font-size: 2rem;
   }
   #postrock #resume .where_when {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   #postrock #resume .where_when .where {
     display: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
