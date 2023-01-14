@@ -43,17 +43,11 @@ a:hover {
 }
 
 .noselect {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .flex-space-between {
@@ -187,7 +181,6 @@ ul li {
   height: auto;
   max-height: 0;
   overflow: hidden;
-  transition: all var(--fast) var(--ease);
 }
 #postrock #resume .chapter .sections .section .details.vis {
   padding-bottom: 2rem;
@@ -202,7 +195,6 @@ ul li {
   #jazz {
     padding-bottom: 10vh;
   }
-
   #postrock {
     flex-direction: column;
     align-items: flex-start;
@@ -230,7 +222,6 @@ ul li {
   main {
     padding: 0 1rem;
   }
-
   #postrock {
     justify-content: flex-end;
     flex-direction: column;
@@ -270,7 +261,6 @@ ul li {
   #jazz #contact {
     font-size: 1.4rem;
   }
-
   #postrock #name {
     font-size: 20vw;
     margin-bottom: 2rem;

@@ -24,9 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function bw() {
         if (
-            getComputedStyle(document.documentElement)
-                .getPropertyValue('--background')
-                .trim() == '#fff'
+            getComputedStyle(document.documentElement).getPropertyValue('--background').trim() ==
+            '#fff'
         ) {
             document.documentElement.style.setProperty('--primary', '#f6f6f6');
             document.documentElement.style.setProperty('--background', '#111');
@@ -59,15 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function toggleDetail(e) {
-    // var detailItem = e.currentTarget.querySelector('.details');
     var detailItem = e.currentTarget.nextElementSibling;
     detailItem.classList.toggle('vis');
 }
 
 function toggleSections(e) {
-    // e.currentTarget.nextElementSibling.classList.toggle('vis')
-    var detailItems =
-        e.currentTarget.nextElementSibling.querySelectorAll('.details');
+    var detailItems = e.currentTarget.nextElementSibling.querySelectorAll('.details');
     for (var i = 0; i < detailItems.length; i++) {
         // console.log(detailItems[i]);
         detailItems[i].classList.add('vis');

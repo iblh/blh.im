@@ -194,7 +194,7 @@ ul {
                         height: auto;
                         max-height: 0;
                         overflow: hidden;
-                        transition: all var(--fast) var(--ease);
+                        // transition: all var(--fast) var(--ease);
 
                         &.vis {
                             padding-bottom: 2rem;
