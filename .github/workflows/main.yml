@@ -37,7 +37,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             # git update to latest codebase on main branch
-            cd /www/blh.im && git pull
+            cd /www/bolinh.com && git pull
       # - name: deploy
       #   uses: AEnterprise/rsync-deploy@v1.0 # https://github.com/AEnterprise/rsync-deploy
       #   env:

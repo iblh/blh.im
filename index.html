@@ -46,7 +46,7 @@
                         >
                             <polygon points="8,0 16,13.856 0,13.856" />
                         </svg>
-                        <span id="domain">blh.im</span>
+                        <span id="domain">bolinh.com</span>
                     </a>
                 </div>
                 <div id="about">
@@ -89,8 +89,14 @@
             </div>
             <div id="postrock">
                 <div id="name">Bolin Huang</div>
-                <div id="copyright">©&nbsp;2023</div>
+                <div id="copyright">©&nbsp;<span id="year"></span></div>
             </div>
         </main>
     </body>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var year = new Date().getFullYear();
+                document.getElementById('year').textContent = year;
+            });
+        </script>
 </html>

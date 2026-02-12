@@ -7,4 +7,4 @@ Disallow: /
 User-agent: *
 Disallow: /lyssyl/
 
-Sitemap: https://blh.im/sitemap.xml
+Sitemap: https://bolinh.com/sitemap.xml
